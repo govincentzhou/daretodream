@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dare To Dream | Elite Performance & Engineering</title>
+    <!-- Google Fonts: Inter for clean UI, Outfit for bold athletic headings -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-icon">⚡</span>
+                <span class="logo-text">DARE TO DREAM</span>
+            </a>
+            <nav class="nav-links">
+                <a href="#stats">Metrics</a>
+                <a href="#achievements">Timeline</a>
+                <a href="#videos">Videos</a>
+                <a href="#connect">Connect</a>
+            </nav>
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-btn" aria-label="Toggle light/dark theme">
+                    <!-- Sun Icon (Default in Dark Mode to transition to light) -->
+                    <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <!-- Moon Icon (Hidden initially in dark mode) -->
+                    <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+                <a href="#connect" class="btn btn-primary btn-sm">Join Team</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-bg-overlay"></div>
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <span class="badge badge-gold animate-fade-in">OLYMPIAN, PUBLIC SPEAKER, & STRATEGY CONSULTANT</span>
+                    <h1 class="hero-title animate-slide-up">
+                        From Olympic<br>Ice to the <span class="highlight-gold">Boardroom</span>
+                    </h1>
+                    <p class="hero-subtitle animate-slide-up-delay">
+                        Vincent Zhou is an Olympic Gold Medalist, two-time World Bronze Medalist, and Brown University graduate transitioning his elite athletic drive, precision, and discipline into the corporate world as a Strategy Associate at EY-Parthenon.
+                    </p>
+                    <div class="hero-cta animate-slide-up-delay2">
+                        <a href="#achievements" class="btn btn-primary">My Achievements</a>
+                        <a href="#connect" class="btn btn-outline">Connect</a>
+                    </div>
+                </div>
+                <div class="hero-media animate-scale-in">
+                    <div class="hero-frame">
+                        <div class="glow-accent"></div>
+                        <img src="assets/hero_athletic_art.jpg" alt="Figure Skating Performance" class="hero-img">
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <span class="mouse">
+                    <span class="wheel"></span>
+                </span>
+                <span class="arrow-down"></span>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section id="stats" class="stats-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="badge">KEY METRICS</span>
+                    <h2>Performance by the Numbers</h2>
+                </div>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <svg class="olympic-rings" viewBox="0 0 52 30" width="52" height="30" style="display: inline-block; vertical-align: middle;">
+                                <!-- Top Row: Blue, Black/White, Red -->
+                                <circle cx="13" cy="11" r="9" stroke="#0081C8" stroke-width="2.2" fill="none" />
+                                <circle cx="26" cy="11" r="9" stroke="var(--rings-black, #ffffff)" stroke-width="2.2" fill="none" />
+                                <circle cx="39" cy="11" r="9" stroke="#EE334E" stroke-width="2.2" fill="none" />
+                                <!-- Bottom Row: Yellow, Green -->
+                                <circle cx="19.5" cy="19" r="9" stroke="#FCB131" stroke-width="2.2" fill="none" />
+                                <circle cx="32.5" cy="19" r="9" stroke="#00A651" stroke-width="2.2" fill="none" />
+                            </svg>
+                        </div>
+                        <div class="stat-number" data-target="1">0</div>
+                        <div class="stat-label">Olympic Gold Medal, 2018 & 2022 Olympian</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">🏆</div>
+                        <div class="stat-number" data-target="14">0</div>
+                        <div class="stat-label">ISU Major Medals</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <svg class="flag-icon" viewBox="0 0 24 16" width="42" height="28" style="border-radius: 2px; display: inline-block; vertical-align: middle; box-shadow: 0 2px 5px rgba(0,0,0,0.25);">
+                                <rect width="24" height="16" fill="#B22234"/>
+                                <rect width="24" height="1.23" y="1.23" fill="#FFF"/>
+                                <rect width="24" height="1.23" y="3.69" fill="#FFF"/>
+                                <rect width="24" height="1.23" y="6.15" fill="#FFF"/>
+                                <rect width="24" height="1.23" y="8.61" fill="#FFF"/>
+                                <rect width="24" height="1.23" y="11.07" fill="#FFF"/>
+                                <rect width="24" height="1.23" y="13.53" fill="#FFF"/>
+                                <rect width="10" height="8.61" fill="#3C3B6E"/>
+                                <g fill="#FFF">
+                                    <circle cx="2" cy="1.8" r="0.4"/>
+                                    <circle cx="4" cy="1.8" r="0.4"/>
+                                    <circle cx="6" cy="1.8" r="0.4"/>
+                                    <circle cx="8" cy="1.8" r="0.4"/>
+                                    <circle cx="3" cy="3.2" r="0.4"/>
+                                    <circle cx="5" cy="3.2" r="0.4"/>
+                                    <circle cx="7" cy="3.2" r="0.4"/>
+                                    <circle cx="2" cy="4.6" r="0.4"/>
+                                    <circle cx="4" cy="4.6" r="0.4"/>
+                                    <circle cx="6" cy="4.6" r="0.4"/>
+                                    <circle cx="8" cy="4.6" r="0.4"/>
+                                    <circle cx="3" cy="6.0" r="0.4"/>
+                                    <circle cx="5" cy="6.0" r="0.4"/>
+                                    <circle cx="7" cy="6.0" r="0.4"/>
+                                    <circle cx="2" cy="7.4" r="0.4"/>
+                                    <circle cx="4" cy="7.4" r="0.4"/>
+                                    <circle cx="6" cy="7.4" r="0.4"/>
+                                    <circle cx="8" cy="7.4" r="0.4"/>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="stat-number" data-target="9">0</div>
+                        <div class="stat-label">National Medals, including 3 Titles</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Achievements Section -->
+        <section id="achievements" class="achievements-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="badge">RECORD BOARD</span>
+                    <h2>Milestones & Achievements</h2>
+                    <p class="section-desc">Track progress, race highlights, and engineering deliverables.</p>
+                </div>
+
+                <!-- Filters -->
+                <div class="timeline-filters">
+                    <button class="filter-btn active" data-filter="all">All Milestones</button>
+                    <button class="filter-btn" data-filter="athletic">Athletics</button>
+                    <button class="filter-btn" data-filter="engineering">Engineering</button>
+                </div>
+
+                <!-- Timeline -->
+                <div class="timeline">
+                    <!-- Line down center -->
+                    <div class="timeline-line"></div>
+
+                    <!-- August 2026 (Engineering) -->
+                    <div class="timeline-item engineering" data-category="engineering">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card">
+                            <span class="timeline-date">August 2026</span>
+                            <span class="card-badge tech-badge">💻 Career</span>
+                            <h3>Associate at EY-Parthenon</h3>
+                            <p>Started as an Associate at EY-Parthenon, specializing in corporate strategy consulting and commercial business analysis.</p>
+                            <div class="timeline-meta">
+                                <span>💼 Associate</span>
+                                <span>📍 Boston, MA</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- December 2025 (Engineering) -->
+                    <div class="timeline-item engineering" data-category="engineering">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card">
+                            <span class="timeline-date">December 2025</span>
+                            <span class="card-badge tech-badge">🎓 Academic</span>
+                            <h3>Graduated Brown University</h3>
+                            <p>Graduated from Ivy League institution Brown University with a Bachelor of Arts in Business Economics.</p>
+                            <div class="timeline-meta">
+                                <span>🎓 B.A. Economics</span>
+                                <span>📍 Providence, RI</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- March 2022 (Athletic) -->
+                    <div class="timeline-item athletic" data-category="athletic">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card">
+                            <span class="timeline-date">March 2022</span>
+                            <span class="card-badge gold-badge">🥇 Athletic</span>
+                            <h3>World Bronze Medal</h3>
+                            <p>Captured the bronze medal at the ISU World Figure Skating Championships, competing at the highest level of international sport.</p>
+                            <div class="timeline-meta">
+                                <span>🥉 3rd Place</span>
+                                <span>📍 Montpellier, France</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- February 2022 (Athletic) -->
+                    <div class="timeline-item athletic" data-category="athletic">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card">
+                            <span class="timeline-date">February 2022</span>
+                            <span class="card-badge gold-badge">🥇 Athletic</span>
+                            <h3>Olympic Team Gold Medal</h3>
+                            <p>Claimed the Olympic gold medal in the Team Event at the Winter Olympic Games with Team USA.</p>
+                            <div class="timeline-meta">
+                                <span>🏅 Olympic Champion</span>
+                                <span>📍 Beijing, China</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- December 2021 (Athletic) -->
+                    <div class="timeline-item athletic" data-category="athletic">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card">
+                            <span class="timeline-date">December 2021</span>
+                            <span class="card-badge gold-badge">🥇 Athletic</span>
+                            <h3>Grand Prix Final Qualifier</h3>
+                            <p>Qualified for the prestigious ISU Grand Prix of Figure Skating Final, representing the top 6 skaters in the world.</p>
+                            <div class="timeline-meta">
+                                <span>🏆 Top 6 World</span>
+                                <span>📍 Osaka, Japan</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- October 2021 (Athletic) -->
+                    <div class="timeline-item athletic" data-category="athletic">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card">
+                            <span class="timeline-date">October 2021</span>
+                            <span class="card-badge gold-badge">🥇 Athletic</span>
+                            <h3>Skate America Champion</h3>
+                            <p>Won the gold medal at Skate America, a major international Grand Prix event, defeating a world-class field.</p>
+                            <div class="timeline-meta">
+                                <span>🥇 1st Place</span>
+                                <span>📍 Las Vegas, NV</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- September 2019 (Engineering) -->
+                    <div class="timeline-item engineering" data-category="engineering">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card">
+                            <span class="timeline-date">September 2019</span>
+                            <span class="card-badge tech-badge">🎓 Academic</span>
+                            <h3>Matriculated at Brown University</h3>
+                            <p>Entered Brown University to pursue studies in Business Economics, balancing elite athletics with rigorous academics.</p>
+                            <div class="timeline-meta">
+                                <span>📚 Undergraduate</span>
+                                <span>📍 Providence, RI</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- March 2019 (Athletic) -->
+                    <div class="timeline-item athletic" data-category="athletic">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card">
+                            <span class="timeline-date">March 2019</span>
+                            <span class="card-badge gold-badge">🥇 Athletic</span>
+                            <h3>World Bronze Medal</h3>
+                            <p>Won the bronze medal at the ISU World Figure Skating Championships, marking a career-first senior World podium.</p>
+                            <div class="timeline-meta">
+                                <span>🥉 3rd Place</span>
+                                <span>📍 Saitama, Japan</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- February 2018 (Athletic) -->
+                    <div class="timeline-item athletic" data-category="athletic">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card">
+                            <span class="timeline-date">February 2018</span>
+                            <span class="card-badge gold-badge">🥇 Athletic</span>
+                            <h3>Winter Olympian - Team USA</h3>
+                            <p>Competed as the youngest male member of Team USA at the Winter Olympic Games, finishing 6th in the individual men's event.</p>
+                            <div class="timeline-meta">
+                                <span>🇺🇸 Team USA</span>
+                                <span>📍 Pyeongchang, South Korea</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- June 2017 (Engineering) -->
+                    <div class="timeline-item engineering" data-category="engineering">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card">
+                            <span class="timeline-date">June 2017</span>
+                            <span class="card-badge tech-badge">🎓 Academic</span>
+                            <h3>Early High School Honors Graduation</h3>
+                            <p>Graduated high school early with honors, accelerating academic progression by skipping three grades in Mathematics and one grade in all other subjects.</p>
+                            <div class="timeline-meta">
+                                <span>📈 Skipped 3+1 Grades</span>
+                                <span>🎖️ Honors Graduate</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- March 2017 (Athletic) -->
+                    <div class="timeline-item athletic" data-category="athletic">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card">
+                            <span class="timeline-date">March 2017</span>
+                            <span class="card-badge gold-badge">🥇 Athletic</span>
+                            <h3>World Junior Champion</h3>
+                            <p>Captured the World Junior Figure Skating Championships title, setting a historic, world-record score in the junior ranks.</p>
+                            <div class="timeline-meta">
+                                <span>🏆 1st Place</span>
+                                <span>📈 Historic High Score</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- November 2016 (Athletic) -->
+                    <div class="timeline-item athletic" data-category="athletic">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card">
+                            <span class="timeline-date">November 2016</span>
+                            <span class="card-badge gold-badge">🥇 Athletic</span>
+                            <h3>Junior Grand Prix Final Qualifier</h3>
+                            <p>Qualified for the Junior Grand Prix Final in debut international figure skating season, demonstrating rapid competitiveness.</p>
+                            <div class="timeline-meta">
+                                <span>🌟 International Debut</span>
+                                <span>📍 Marseille, France</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- January 2012 (Athletic) -->
+                    <div class="timeline-item athletic" data-category="athletic">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card">
+                            <span class="timeline-date">January 2012</span>
+                            <span class="card-badge gold-badge">🥇 Athletic</span>
+                            <h3>Third Consecutive National Title</h3>
+                            <p>Secured a third consecutive national championship title, continuing to build a legacy as the youngest national champion in history.</p>
+                            <div class="timeline-meta">
+                                <span>🥇 3rd Gold</span>
+                                <span>📈 History Maker</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- January 2011 (Athletic) -->
+                    <div class="timeline-item athletic" data-category="athletic">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card">
+                            <span class="timeline-date">January 2011</span>
+                            <span class="card-badge gold-badge">🥇 Athletic</span>
+                            <h3>Second Consecutive National Title</h3>
+                            <p>Claimed a second consecutive national championship title, achieving the highest score ever recorded and cementing status as the youngest champion ever.</p>
+                            <div class="timeline-meta">
+                                <span>🥇 2nd Gold</span>
+                                <span>📈 Record Score</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- December 2010 (Athletic) -->
+                    <div class="timeline-item athletic" data-category="athletic">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card">
+                            <span class="timeline-date">December 2010</span>
+                            <span class="card-badge gold-badge">🥇 Athletic</span>
+                            <h3>First National Title</h3>
+                            <p>Captured first U.S. national championship title, announcing entrance onto the national figure skating stage.</p>
+                            <div class="timeline-meta">
+                                <span>🥇 1st Gold</span>
+                                <span>✨ Champion Debut</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Showcase Section -->
+        <section id="videos" class="videos-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="badge">MEDIA ROOM</span>
+                    <h2>Performance in Action</h2>
+                    <p class="section-desc">Watch championship skates and hear Vincent talk about perseverance, academics, and the pursuit of multidisciplinary excellence.</p>
+                </div>
+                <div class="video-grid">
+                    <!-- Video Card 1 -->
+                    <div class="video-card" data-video-id="znQFPov3YZ4">
+                        <div class="video-thumbnail-container">
+                            <img src="https://img.youtube.com/vi/znQFPov3YZ4/hqdefault.jpg" alt="2021 Skate America Gold Medal Skate Video Thumbnail" class="video-thumbnail">
+                            <div class="video-overlay">
+                                <div class="play-btn">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                                    </svg>
+                                </div>
+                            </div>
+                            <span class="video-duration">4:40</span>
+                        </div>
+                        <div class="video-info">
+                            <h3>2021 Skate America Gold Medal Skate</h3>
+                            <p>Watch the free skate program that earned Vincent Zhou the gold medal at Skate America 2021 in Las Vegas, Nevada, defeating a world-class field.</p>
+                        </div>
+                    </div>
+
+                    <!-- Video Card 2 -->
+                    <div class="video-card" data-video-id="2h-aGwr5aaw">
+                        <div class="video-thumbnail-container">
+                            <img src="https://img.youtube.com/vi/2h-aGwr5aaw/hqdefault.jpg" alt="TEDxBrownU: Dare to Dream Video Thumbnail" class="video-thumbnail">
+                            <div class="video-overlay">
+                                <div class="play-btn">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                                    </svg>
+                                </div>
+                            </div>
+                            <span class="video-duration">15:20</span>
+                        </div>
+                        <div class="video-info">
+                            <h3>TEDxBrownU: Dare to Dream</h3>
+                            <p>Vincent Zhou's TEDx talk at Brown University, sharing insights on dreaming big, overcoming adversity, and transitioning from the ice to academics.</p>
+                        </div>
+                    </div>
+
+                    <!-- Video Card 3 -->
+                    <div class="video-card" data-video-id="z2fiVtVyUIc">
+                        <div class="video-thumbnail-container">
+                            <img src="https://img.youtube.com/vi/z2fiVtVyUIc/hqdefault.jpg" alt="The Pursuit of Excellence Video Thumbnail" class="video-thumbnail">
+                            <div class="video-overlay">
+                                <div class="play-btn">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                                    </svg>
+                                </div>
+                            </div>
+                            <span class="video-duration">4:50</span>
+                        </div>
+                        <div class="video-info">
+                            <h3>The Pursuit of Excellence</h3>
+                            <p>Vincent Zhou's bronze-medal winning free skate program at the 2022 World Figure Skating Championships in Montpellier, France.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Connect / Social Section -->
+        <section id="connect" class="connect-section">
+            <div class="container connect-grid">
+                <div class="connect-info">
+                    <span class="badge">GET IN TOUCH</span>
+                    <h2>Join My Team & Connect</h2>
+                    <p class="connect-desc">Whether you want to connect about business strategy, academics, or the future of figure skating, feel free to reach out.</p>
+                    
+                    <div class="social-links-grid">
+                        <a href="https://instagram.com/govincentzhou" target="_blank" class="social-card instagram">
+                            <span class="social-icon">📸</span>
+                            <div class="social-details">
+                                <h4>Instagram</h4>
+                                <p>@govincentzhou</p>
+                            </div>
+                        </a>
+                        <a href="https://www.isuresults.com/bios/isufs00034362.htm" target="_blank" class="social-card USFS">
+                            <span class="social-icon">⛸️</span>
+                            <div class="social-details">
+                                <h4>ISU Profile</h4>
+                                <p>Official Athlete Bio</p>
+                            </div>
+                        </a>
+                        <a href="https://linkedin.com/in/vincentzhou" target="_blank" class="social-card linkedin">
+                            <span class="social-icon">💼</span>
+                            <div class="social-details">
+                                <h4>LinkedIn</h4>
+                                <p>Vincent Zhou</p>
+                            </div>
+                        </a>
+                        <a href="mailto:vincent_zhou@alumni.brown.edu" class="social-card email">
+                            <span class="social-icon">✉️</span>
+                            <div class="social-details">
+                                <h4>Email</h4>
+                                <p>vincent_zhou@alumni.brown.edu</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-card">
+                    <form id="contact-form" autocomplete="off">
+                        <div class="form-group">
+                            <input type="text" id="contact-name" name="name" required placeholder=" ">
+                            <label for="contact-name">Your Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="contact-email" name="email" required placeholder=" ">
+                            <label for="contact-email">Your Email</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="contact-subject" name="subject" required placeholder=" ">
+                            <label for="contact-subject">Subject</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="contact-message" name="message" required placeholder=" " rows="5"></textarea>
+                            <label for="contact-message">Message</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">
+                            <span class="btn-text">Transmit Message</span>
+                            <span class="btn-loader hidden"></span>
+                        </button>
+                        <div id="form-feedback" class="form-feedback hidden"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-left">
+                <a href="#" class="logo">
+                    <span class="logo-icon">⚡</span>
+                    <span class="logo-text">DARE TO DREAM</span>
+                </a>
+                <p>Engineering high performance systems, running the long yards.</p>
+            </div>
+            <div class="footer-right">
+                <p>&copy; 2026 Dare To Dream. All rights reserved. Built for Elite Performance.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Video Theater Modal Lightbox -->
+    <div id="video-lightbox" class="lightbox hidden" aria-hidden="true" role="dialog">
+        <div class="lightbox-overlay"></div>
+        <div class="lightbox-content">
+            <button class="lightbox-close" aria-label="Close video player">&times;</button>
+            <div class="lightbox-player-wrapper">
+                <div id="lightbox-iframe-container"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
